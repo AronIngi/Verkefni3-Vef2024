@@ -13,6 +13,7 @@ html {
 *:before,
 *:after {
   box-sizing: inherit;
+
 }
 
 /* hjálpar class sem felur sjónrænt en skjálesarar lesa */
@@ -37,15 +38,18 @@ html {
 
 /*** Leturgerðir sem við sækjum úr fonts/ möppu ***/
 @font-face {
-  /* TODO Bæta við leturgerð */
+  font-family: "open-sans";
+  src: url("../fonts/OpenSans-Regular.ttf");
+}
+
+@font-face {/* TODO Skilgreina */
+  font-family: "matemasie";
+  src: url("../fonts/Matemasie-Regular.ttf");
 }
 
 @font-face {
-  /* TODO Bæta við leturgerð */
-}
-
-@font-face {
-  /* TODO Bæta við leturgerð */
+  font-family: "open-sans-bold";
+  src: url("../fonts/OpenSans-Bold.ttf");
 }
 
 /*** Allt meginmál notar open sans ***/
@@ -53,7 +57,7 @@ html,
 input,
 select,
 button {
-  /* TODO Skilgreina */
+  font-family: open-sans;
 }
 
 /*** Allar fyrirsagnir nota Matemasie regular ***/
@@ -61,12 +65,13 @@ h1,
 h2,
 h3,
 legend {
-  /* TODO Skilgreina */
+  font-family:matemasie;
 }
 
 /** Lætur myndir aldrei taka meira pláss en foreldri skilgreinir **/
 img {
   max-width: 100%;
+  border-radius:5px;
 }
 
 /** Litur á hlekkjum erfist frá foreldri **/
@@ -86,7 +91,6 @@ a {
   flex-direction: column;
   width: 100%;
   min-height: 100vh;
-
   background-color: #f3dd99;
 }
 
@@ -99,29 +103,73 @@ a {
 /** Haus á síðum **/
 
 header {
-  /* TODO Skilgreina */
+    background-color:#cc99bb;
+    text-align:center;
+}
+
+h1,
+h2,
+h3,
+p,
+img,
+input,
+select,
+textarea,
+label
+{
+    margin-bottom:1rem;
 }
 
 /** Valmynd **/
 
 nav {
-  /* TODO Skilgreina */
+    background-color:#eebbdd;
+    padding:1rem;
+    border-bottom:solid 4px #cc99bb;
 }
 
 /* TODO Skilgreina aðra selectora fyrir valmynd */
+ul
+{
+    list-style:none;
+}
+
+nav ul li
+{
+    display:inline;
+    margin:1rem;
+}
+
+nav .active
+{
+    text-decoration:none;
+    font-family:open-sans-bold;
+}
 
 /** Meginmál og efni forsíðu **/
 
 main {
-  /* TODO Skilgreina */
+    margin-top:1rem;
+    margin-bottom:1rem;
+    margin-left:2rem;
+    margin-right:2rem;
 }
 
 /* TODO Skilgreina aðra selectora fyrir meginmál of forsíðu */
 
+.mynd_forsida{
+    float:right;
+    margin-left:1rem;
+    width:40%;
+    min-width:400px;
+}
+
 /** Fótur **/
 
 footer {
-  /* TODO Skilgreina */
+    background-color: #eebbdd;
+    border-top:solid 4px #cc99bb;
+    text-align:center;
 }
 
 /* Ef við notum section fyrir hvert svæði undir fót, þá er hægt að nota eftirfarandi */
@@ -130,14 +178,42 @@ footer > section {
   /* Lætur efni byrja efst í línu, almennt myndum við nota flexbox hér! */
   vertical-align: top;
   /* TODO fleiri skilgreiningar */
+  margin:1rem;
 }
 
 /* TODO Skilgreina aðra selectora fyrir fót */
+
+footer p span
+{
+    display:block;
+}
+
+.day
+{
+   font-family:open-sans-bold;
+}
 
 /** Spilasíða, töflustílar **/
 
 table {
   /* TODO Skilgreina */
+  border-collapse:collapse;
+  text-align:center;
+}
+
+table img
+{
+    margin:0;
+}
+
+tr:nth-child(odd)
+{
+    background-color:#eebbdd;
+}
+
+td
+{
+    padding:0.5rem;
 }
 
 /* TODO Skilgreina aðra selectora fyrir töflu */

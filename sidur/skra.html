@@ -6,70 +6,82 @@
 		<link rel="stylesheet" type="text/css" href="../style/style.css" />
 	</head>
 	<body>
-		<header>
-			<h1>Skráning á viðburði</h1>
-			<nav>
-				<ul>
-					<li><a class="sr-only" href="">Beint í efni</a></li>
-					<li><a href="../index.html">Forsíða spilabúðarinnar</a></li>
-					<li><a href="spil.html">Spil</a></li>
-					<li><a href="vidburdir.html">Viðburðir</a></li>
-					<li>Skráning á viðburði</li>
-				</ul>
-			</nav>
-		</header>
-		<main>
-			<p>skráðu þig á viðburði hjá okkur</p>
-			<form>
-				<h3>Viðburðir</h3>
-				<label>Hvaða viðburð viltu koma á?</label>
-				<select>
-					<option>Púslukvöld</option>
-					<option>Ticket to Ride</option>
-				</select>
-				<label>Hvenær?</label>
-				<input type="date">
-				<label>Klukkan hvað?</label>
-				<input type="time" min="10:00" max="00:00" >
-				<label>Hve mörg?</label>
-				<input type="number" min="1" max="10">
-				<label>viltu taka eitthvað fram?</label>
-				<textarea></textarea>
-				<h3>Panta mat</h3>
-				<label>Viltu einhvern mat?</label>
-				<select>
-					<option>Pizzusneið og gos</option>
-					<option>Kaffi og kaka</option>
-					<option>Engan mat</option>
-				</select>
-				<label>Ofnæmi?</label>
-				<input type="checkbox">
-				<label>Eitthvað annað sem við þurfum að vita?</label>
-				<textarea></textarea>
-				<h3>Þínar upplýsingar</h3>
-				<label>Nafn</label>
-				<input type="text" required>
-				<label>Netfang</label>
-				<input type="email" required>
-				<label>Sími</label>
-				<input type="tel" required>
-				<h3>Samþykkja og panta</h3>
-				<label>Samþykkja skilmála</label>
-				<input type="checkbox" required >
-				<input type="submit" value="Panta" >
-			</form>
-		</main>
-		<footer>
-			<h2>opnunartímar</h2>
-			<p>Mánudagar: Lokað Þriðjudagar til fimmtudags 14:00-22:00 Föstudaga 14:00-00:00 Laugardaga 12:00-00:00 Sunnudaga 12:00-22:00</p>
-			<h2>Hér erum við</h2>
-			<p>Spilabúðin ehf. Spilgata 1 101 Reykjavík Sími 123-4567 <a href="">spilabudin@example.org</a></p>
-			<h2>Samfélagsmiðlar</h2>
-			<ul>
-				<li><a href="">Facebook</a></li>
-				<li><a href="">YouTube</a></li>
-				<li><a href="">Instagram</a></li>
-			</ul>
-		</footer>
+		<div class="wrapper">
+			<header>
+				<h1>Skráning á viðburði</h1>
+				<nav>
+					<a class="sr-only" href="">Beint í efni</a>
+					<ul>
+						<li><a href="../index.html">Forsíða spilabúðarinnar</a></li>
+						<li><a href="spil.html">Spil</a></li>
+						<li><a href="vidburdir.html">Viðburðir</a></li>
+						<li><a class="active" href="skra.html">Skráning á viðburði</a></li>
+					</ul>
+				</nav>
+			</header>
+			<main>
+				<p>skráðu þig á viðburði hjá okkur</p>
+				<form>
+					<h3>Viðburðir</h3>
+					<label>Hvaða viðburð viltu koma á?</label>
+					<select>
+						<option>Púslukvöld</option>
+						<option>Ticket to Ride</option>
+					</select>
+					<label>Hvenær?</label>
+					<input type="date">
+					<label>Klukkan hvað?</label>
+					<input type="time" min="10:00" max="00:00" >
+					<label>Hve mörg?</label>
+					<input type="number" min="1" max="10">
+					<label>viltu taka eitthvað fram?</label>
+					<textarea></textarea>
+					<h3>Panta mat</h3>
+					<label>Viltu einhvern mat?</label>
+					<select>
+						<option>Pizzusneið og gos</option>
+						<option>Kaffi og kaka</option>
+						<option>Engan mat</option>
+					</select>
+					<label>Ofnæmi?</label>
+					<input type="checkbox">
+					<label>Eitthvað annað sem við þurfum að vita?</label>
+					<textarea></textarea>
+					<h3>Þínar upplýsingar</h3>
+					<label>Nafn</label>
+					<input type="text" required>
+					<label>Netfang</label>
+					<input type="email" required>
+					<label>Sími</label>
+					<input type="tel" required>
+					<h3>Samþykkja og panta</h3>
+					<label>Samþykkja skilmála</label>
+					<input type="checkbox" required >
+					<input type="submit" value="Panta" >
+				</form>
+			</main>
+			<footer>
+				<section>
+					<h2>Opnunartímar</h2>
+					<p><span class="day">Mánudagar</span> <span>Lokað</span></p>
+					<p><span class="day">Þriðjudagar til fimmtudags</span> <span>14:00-22:00</span></p>
+					<p><span class="day">Föstudaga</span> <span>14:00-00:00</span></p>
+					<p><span class="day">Laugardaga</span> <span>12:00-00:00</span></p>
+					<p><span class="day">Sunnudaga</span> <span>12:00-22:00</span></p>
+				</section>
+				<section>
+					<h2>Hér erum við</h2>
+					<p><span>Spilabúðin ehf.</span> <span>Spilgata 1</span> <span>101 Reykjavík</span> <span>Sími 123-4567</span> <span><a href="">spilabudin@example.org</span></a></p>
+				</section>
+				<section>
+					<h2>Samfélagsmiðlar</h2>
+					<ul>
+						<li><a href="">Facebook</a></li>
+						<li><a href="">YouTube</a></li>
+						<li><a href="">Instagram</a></li>
+					</ul>
+				</section>
+			</footer>
+		</div>
 	</body>
 </html>
