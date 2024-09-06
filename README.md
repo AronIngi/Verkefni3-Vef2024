@@ -2,4 +2,4 @@
 
 Spilabúð
 
-verkefni 2 í vefforritun. Haustönn 2024.
+verkefni 3 í vefforritun. Haustönn 2024.
