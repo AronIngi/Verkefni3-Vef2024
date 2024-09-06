@@ -222,6 +222,19 @@ td
 
 .event {
   /* TODO Skilgreina, gerum ráð fyrir að hver viðburður hafi eigin selector */
+
+}
+
+.img_event
+{
+    float:left;
+    width:30%;
+    margin-right:1rem;
+}
+
+.event_link
+{
+    clear:left;
 }
 
 /* TODO Skilgreina aðra selectora fyrir viðburði */
@@ -229,3 +242,30 @@ td
 /** Skráningarform **/
 
 /* TODO Skilgreina */
+
+.button{
+    border-radius:5px;
+    background-color:#eebbdd;
+    padding:0.5rem;
+}
+
+form span
+{
+    display:block;
+}
+
+input,select
+{
+    text-align:center;
+}
+
+input:not(.exclude):not(.button),
+select,
+textarea
+{
+    background-color:#ffffffff;
+    border-radius:0;
+    border:solid black;
+    height:2.5rem;
+    width:15rem;
+}
